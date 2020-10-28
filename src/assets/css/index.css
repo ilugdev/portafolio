@@ -1,0 +1,32 @@
+:root {
+  --page-width: 960px;
+  --header-height: 120px;
+  --text-color: #fff;
+  --button-color: #756677;
+  --border-radius: 3px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: 100;
+}
+
+html {
+  background-color: #4b434d;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+  transition: 1s filter cubic-bezier(0.86, 0, 0.07, 1);
+  background-color: #4b434d;
+  font-family: "Nunito", sans-serif;
+}

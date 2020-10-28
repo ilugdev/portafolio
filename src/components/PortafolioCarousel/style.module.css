@@ -1,0 +1,32 @@
+.carouselContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.pagination {
+  width: 33px;
+  height: 7px;
+  cursor: pointer;
+  border: none;
+  background-color: var(--button-color);
+  opacity: 0.3;
+  outline: none;
+}
+
+.pagination:first-of-type {
+  border-radius: var(--border-radius) 0 0 var(--border-radius);
+}
+
+.pagination:last-of-type {
+  border-radius: 0 var(--border-radius) var(--border-radius) 0;
+}
+
+.pagination:hover {
+  opacity: 1;
+}
+
+.pagination:disabled {
+  opacity: 1;
+  cursor: default;
+}

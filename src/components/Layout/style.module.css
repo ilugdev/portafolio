@@ -1,0 +1,16 @@
+.layout {
+  width: 100%;
+  max-width: var(--page-width);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.pagesLayout {
+  width: 100%;
+  height: calc(100vh - var(--header-height));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
