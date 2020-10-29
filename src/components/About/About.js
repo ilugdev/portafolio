@@ -10,8 +10,17 @@ About.Title = ({ children }) => <h1>{children}</h1>;
 
 About.Paragraph = ({ children }) => <p>{children}</p>;
 
-About.Separator = () => <div className={style.separator}></div>;
+About.Wrapper = ({ children }) => (
+  <div className={style.wrapper}>{children}</div>
+);
 
-About.ExpirienceList = ({ children }) => <ul>{children}</ul>;
-
-About.Expirience = ({ children }) => <li>{children}</li>;
+About.Github = () => (
+  <a
+    className={style.githubLink}
+    href="https:github.com/ilugdev"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    github
+  </a>
+);

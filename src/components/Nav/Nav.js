@@ -3,24 +3,15 @@ import { Link, useRoute } from "wouter";
 
 import style from "./style.module.css";
 
-const NavItem = ({ path }) => {
-  const [match] = useRoute(path);
+const route1 = "/";
+const route2 = "/portafolio";
+
+export default function Nav() {
+  const [match] = useRoute(route1);
 
   return (
-    <li className={style.navItem}>
-      <Link href={path}>
-        <button disabled={match}></button>
-      </Link>
-    </li>
-  );
-};
-
-export default function Nav({ routes }) {
-  return (
-    <ul className={style.nav}>
-      {routes.map(({ path }) => (
-        <NavItem key={path} path={path} />
-      ))}
-    </ul>
+    <Link href={match ? route2 : route1}>
+      <button className={style.nav}></button>
+    </Link>
   );
 }

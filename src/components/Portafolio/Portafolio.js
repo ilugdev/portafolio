@@ -6,11 +6,11 @@ export default function Portafolio({ children }) {
   return <div className={style.portafolioContainer}>{children}</div>;
 }
 
-Portafolio.Box = function ({ data }) {
+Portafolio.Box = function ({ data, position }) {
   const { img, title, tags } = data;
 
   return (
-    <div className={style.portafolio}>
+    <div className={style.portafolio} style={{ left: position }}>
       <img src={img} alt="project preview" />
       <div className={style.portafolioText}>
         <h1>{title}</h1>
@@ -24,6 +24,6 @@ Portafolio.Box = function ({ data }) {
   );
 };
 
-Portafolio.NavContainer = function ({ children }) {
-  return <div className={style.navContainer}>{children}</div>;
+Portafolio.Message = function ({ text }) {
+  return <h1 className={style.portafolioMessage}>{text}</h1>;
 };
