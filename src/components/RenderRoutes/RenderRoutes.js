@@ -2,10 +2,12 @@ import React from "react";
 
 import AnimatedRoute from "components/AnimatedRoute";
 
-export default function RenderRoutes({ routes }) {
+import { ROUTES } from "constants/routes";
+
+export default function RenderRoutes() {
   return (
     <>
-      {routes.map(({ path, Component }) => (
+      {ROUTES.map(({ path, Component }) => (
         <AnimatedRoute key={path} path={path} Component={Component} />
       ))}
     </>

@@ -6,7 +6,6 @@
   flex-direction: column;
   margin: 0 auto;
   position: relative;
-  overflow: hidden;
 }
 
 .pagesLayout {
@@ -21,6 +20,5 @@
 @media (max-width: 960px) {
   .layout {
     padding: 0 2rem;
-    overflow: initial;
   }
 }

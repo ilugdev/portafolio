@@ -5,14 +5,12 @@ import Header from "components/Header";
 import Nav from "components/Nav";
 import RenderRoutes from "components/RenderRoutes";
 
-import ROUTES from "constants/routes";
-
 function App() {
   return (
     <Layout>
-      <Header routes={ROUTES} />
+      <Header />
       <Layout.Pages>
-        <RenderRoutes routes={ROUTES} />
+        <RenderRoutes />
       </Layout.Pages>
       <Nav />
     </Layout>
