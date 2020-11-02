@@ -6,6 +6,7 @@ import { Transition } from "react-transition-group";
 const duration = 300;
 
 const defaultStyle = {
+  height: "100%",
   transition: `all ${duration}ms ease-in-out`,
   opacity: 0.3,
   transform: "scale(0.9)",

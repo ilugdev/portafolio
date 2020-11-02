@@ -2,12 +2,13 @@
   width: 100%;
   height: 100%;
   display: flex;
+  align-items: center;
 }
 
 .portafolio {
-  width: 291px;
+  width: 300px;
+  height: 300px;
   padding: 7px;
-  overflow: hidden;
   border-radius: var(--border-radius);
   transition: background-color, left 0.2s;
   z-index: 1;
@@ -15,6 +16,18 @@
 }
 
 .portafolio:hover .menu {
+  display: flex;
+}
+
+.mobileTouch {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: none;
+  opacity: 0;
+}
+
+.mobileTouch:checked ~ .menu {
   display: flex;
 }
 
@@ -72,11 +85,11 @@
   width: 100%;
   height: 100%;
   display: none;
-  flex-direction: column;
   position: absolute;
+  flex-direction: column;
   top: 0;
   left: 0;
-  background-color: #615564;
+  background-color: #615564dc;
 }
 
 .menu a {
@@ -92,20 +105,21 @@
 }
 
 .menu a:hover {
-  background-color: #847386;
+  text-shadow: 0 0 7px #fff;
 }
 
 @media (max-width: 960px) {
   .portafolioContainer {
-    height: 65vh;
-    overflow-y: scroll;
     display: block;
   }
 
   .portafolio {
-    position: initial;
     transform: none;
     margin-top: 1rem;
+  }
+
+  .mobileTouch {
+    display: block;
   }
 
   .portafolioMessage {

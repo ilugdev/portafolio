@@ -11,6 +11,11 @@ Portafolio.Box = function ({ data }) {
 
   return (
     <div className={style.portafolio}>
+      <input
+        className={style.mobileTouch}
+        type="checkbox"
+        name="mobile_touch"
+      />
       <img src={img} alt="project preview" />
       <div className={style.portafolioText}>
         <h1>{title}</h1>
