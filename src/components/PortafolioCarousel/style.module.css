@@ -7,8 +7,8 @@
 }
 
 .directionContainer {
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   position: absolute;
   z-index: 0;
 }
@@ -23,6 +23,8 @@
 
 @media (max-width: 960px) {
   .directionContainer h1 {
+    top: 7%;
+    right: 25%;
     font-size: 1.2rem;
   }
 }

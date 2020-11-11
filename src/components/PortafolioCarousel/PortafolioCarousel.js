@@ -32,10 +32,18 @@ export default function PortafolioCarousel({ portafolios }) {
   });
 
   const handlePage = () => {
-    if (direction === "right" && page < portafolios.length - 1) {
-      setPage((prevPage) => prevPage + 1);
-    } else if (direction === "left" && page > 0) {
-      setPage((prevPage) => prevPage - 1);
+    if (direction === "right") {
+      if (page === portafolios.length - 1) {
+        setPage(0);
+      } else {
+        setPage((prevPage) => prevPage + 1);
+      }
+    } else if (direction === "left") {
+      if (page === 0) {
+        setPage(portafolios.length - 1);
+      } else {
+        setPage((prevPage) => prevPage - 1);
+      }
     }
   };
 
