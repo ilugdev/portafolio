@@ -6,7 +6,7 @@
   transition: 0.7s all;
   background-color: var(--button-color);
   padding: 0;
-  opacity: 0.7;
+  opacity: 0.5;
   outline: none;
   position: fixed;
   bottom: 5vh;

@@ -5,9 +5,9 @@ import About from "components/About";
 export default function AboutPage() {
   return (
     <About>
-      <About.Title>Hi I'm Ilug.</About.Title>
+      <About.Title>Hi I'm Ilug</About.Title>
       <About.Paragraph>
-        I'm Front-end developer 👨‍💻 with 3 years experience. And I love React.
+        I'm Front-end developer with 3 years experience. And I love React.
       </About.Paragraph>
       <About.Wrapper>
         <About.Paragraph>

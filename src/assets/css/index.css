@@ -1,10 +1,18 @@
 :root {
   --page-width: 960px;
   --header-height: 120px;
-  --text-color: #fff;
-  --paragraph-color: #e9e9e9;
-  --button-color: #756677;
-  --border-radius: 3px;
+  --text-color: #1e1e1e;
+  --paragraph-color: #313131;
+  --gh-color: #292929;
+  --button-color: #cfcfcf;
+  --border-radius: 16px;
+  --background-page: rgb(248, 248, 248);
+  --portafolio-color: #ffffff;
+}
+
+@font-face {
+  font-family: "Minecraft";
+  src: url("../font/Minecraft.ttf");
 }
 
 * {
@@ -15,18 +23,16 @@
 }
 
 html {
-  background-color: #4b434d;
+  background-color: var(--background-page);
 }
 
 body {
   width: 100vw;
   height: 100vh;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: "Minecraft", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  transition: 1s filter cubic-bezier(0.86, 0, 0.07, 1);
-  background-color: #4b434d;
-  font-family: "Nunito", sans-serif;
+  background-color: var(--background-page);
 }
