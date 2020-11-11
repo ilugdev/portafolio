@@ -43,7 +43,7 @@ export default function PortafolioCarousel({ portafolios }) {
     <div className={style.container}>
       <PortafolioCard data={portafolios[page]} />
       <div ref={ele} onClick={handlePage} className={style.directionContainer}>
-        <h1>Click to {direction === "right" ? ">" : "<"}</h1>
+        <h1>{"< click >"}</h1>
       </div>
     </div>
   );

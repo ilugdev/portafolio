@@ -20,7 +20,7 @@ export const PORTAFOLIOS = [
   },
   {
     img: hackernewsreact,
-    title: "Hackernewsreact",
+    title: "Hacker news",
     url: "https://hackernewsreact.vercel.app/",
     repo_url: "https://github.com/ilugdev/hn-react",
     tags: ["react", "react-window", "styled-components", "axios"],

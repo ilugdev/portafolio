@@ -20,3 +20,9 @@
   transform: translateX(50%);
   user-select: none;
 }
+
+@media (max-width: 960px) {
+  .directionContainer h1 {
+    font-size: 1.2rem;
+  }
+}

@@ -1,9 +1,8 @@
 .portafolio {
-  width: 600px;
+  width: 450px;
   padding: 12px;
   border-radius: var(--border-radius);
   background: var(--portafolio-color);
-  transform: rotateY(40deg);
   z-index: 1;
 }
 
@@ -34,7 +33,7 @@
   height: 100%;
   background: var(--background-page);
   border-radius: var(--border-radius);
-  padding: 1rem 2rem;
+  padding: 1rem 1.5rem;
 }
 
 .portafolioText h1 {
@@ -60,8 +59,9 @@
 }
 
 .techs li {
+  display: inline-block;
   font-size: 0.9rem;
-  margin-right: 0.7rem;
+  margin-right: 0.5rem;
   color: var(--paragraph-color);
   border-radius: 4px;
 }
@@ -99,12 +99,44 @@
 }
 
 @media (max-width: 960px) {
-  .portafolioContainer {
-    display: block;
+  .portafolio {
+    width: 90%;
   }
 
-  .portafolio {
-    transform: none;
-    margin-top: 1rem;
+  .portafolio img {
+    height: 200px;
+  }
+
+  .container {
+    padding: 1rem 0 0 0;
+    flex-direction: column;
+  }
+
+  .portafolioText {
+    width: 100%;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .portafolioText h1 {
+    font-size: 1.3rem;
+  }
+
+  .techs li {
+    font-size: 0.8rem;
+  }
+
+  .projectsLinks {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    padding-top: 0;
+  }
+
+  .projectsLinks a {
+    font-size: 1.2rem;
+    margin: 0;
   }
 }
